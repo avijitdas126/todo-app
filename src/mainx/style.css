@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.incomplete-card {
+  background-color: rgb(236, 188, 188);
+  display: inline;
+  padding: 10px;
+  margin: 12px;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.card-box {
+  margin: 6px;
+  padding: 7px;
+  border-bottom: 2px dotted black;
+}
+.card-box:last-child {
+  border-bottom: none;
+}
+.complete-card {
+  background-color: aquamarine;
+
+  padding: 10px;
+  margin: 12px;
+}
+.card-box p {
+  display: inline-block;
+}
+.card-box button {
+  margin-left: 0px;
+}
+.card-box button {
+  width: 76px;
+  border-radius: 23px;
+  border: none;
+  background-color: rgb(50, 50, 160);
+  color: #fff;
+  height: 25px;
+  padding: 1px;
+}
+.card-box button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.card-box li {
+  padding: 2px;
+}
+.card{
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: stretch;
+  align-items: start;
+}
+.card-box button.active{
+  background-color: red;
+  color: #fff;
+}
+.card-box button.active:hover{
+  background-color: rgba(151, 33, 33, 0.856);
+  
+}
+.modal{
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  /* background-color: #000; */
+  background-color: rgb(15, 221, 221);
+  margin: 12px;
+  width: 314px;
+  border-radius: 12px;
+  /* text-align: center; */
+  padding: 12px;
+ 
+}
+.modal h2{
+  margin-bottom: 12px;
+}
+button.close{
+  background-color: rgb(33, 106, 170);
+}
+@media (max-width:768px) {
+  .card{
+    display: grid;
+    grid-template-columns: auto ;
+    align-content: stretch;
+    align-items: start;
+  }
+  .modal{
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    /* background-color: #000; */
+    background-color: rgb(15, 221, 221);
+    margin: 12px;
+    width: 314px;
+    border-radius: 12px;
+    /* text-align: center; */
+    padding: 12px;
+   
+  }
+  button.close{
+    background-color: rgb(33, 106, 170);
+  }
+}
+@media (max-width:480px) and (min-width:200px) {
+  .modal{
+    position: absolute;
+    left: 13%;
+    top: 42%;
+    /* background-color: #000; */
+    background-color: rgb(15, 221, 221);
+    margin: 12px;
+    width: 314px;
+    border-radius: 12px;
+    /* text-align: center; */
+    padding: 12px;
+   
+  }
+  .card-box button {
+    width: 76px;
+    border-radius: 23px;
+    border: none;
+    background-color: rgb(50, 50, 160);
+    color: #fff;
+    height: 25px;
+    padding: 1px;
+  }
+  button.close{
+    background-color: rgb(33, 106, 170);
+  }
+}
+/* App->Todos->Todo  */
+.box{
+  text-align: center;
+  margin-top: 34px;
+}
+.box h2{
+  margin-bottom: 12px;
+}
+.bu{
+  margin-top: 12px;
+  padding-left: 12px;
+  display: inline-block;
+}
+.box button{
+  width: 110px;
+    border-radius: 23px;
+    border: none;
+    background-color: rgb(50, 50, 160);
+    color: #fff;
+    height: 25px;
+    padding: 1px;
+}
+.bu button{
+margin-left: 12px;
+}
