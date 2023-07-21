@@ -64,8 +64,9 @@ h1 {
 }
 .modal{
   position: absolute;
-  left: 40%;
-  top: 40%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
   /* background-color: #000; */
   background-color: rgb(15, 221, 221);
   margin: 12px;
@@ -89,9 +90,7 @@ button.close{
     align-items: start;
   }
   .modal{
-    position: absolute;
-    left: 30%;
-    top: 30%;
+   
     /* background-color: #000; */
     background-color: rgb(15, 221, 221);
     margin: 12px;
@@ -108,8 +107,7 @@ button.close{
 @media (max-width:480px) and (min-width:200px) {
   .modal{
     position: absolute;
-    left: 13%;
-    top: 42%;
+    
     /* background-color: #000; */
     background-color: rgb(15, 221, 221);
     margin: 12px;
@@ -143,7 +141,12 @@ button.close{
 .bu{
   margin-top: 12px;
   padding-left: 12px;
-  display: inline-block;
+  /* padding: 5px; */
+
+  /* display: inline-block; */
+}
+.bu button{
+  margin: 5px;
 }
 .box button{
   width: 110px;
