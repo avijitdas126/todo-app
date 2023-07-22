@@ -13,29 +13,29 @@ export default function Todos(props) {
     }
     return a;
   }
-  let data3 = localStorage.getItem("completetodo");
-  if (data3) {
-    data3 = JSON.parse(data3);
-  } else {
-    data3 = [];
-  }
+  // let data3 = localStorage.getItem("completetodo");
+  // if (data3) {
+  //   data3 = JSON.parse(data3);
+  // } else {
+  //   data3 = [];
+  // }
 
-  const [complete, setcomplete] = useState(data3);
+  const [complete, setcomplete] = useState([]);
 
-  console.log(data3);
+  // console.log(data3);
 
   let data = props.data;
-  let data2 = localStorage.getItem("incompletetodo");
+  // let data2 = localStorage.getItem("incompletetodo");
 
-  data2 = JSON.parse(data2);
+  // data2 = JSON.parse(data2);
 
-  console.log(data2);
-  console.log(data3);
+  // console.log(data2);
+  // console.log(data3);
   const [addnewTodo, setaddnewTodo] = useState({ id: password(), task: "" });
 
   const [edit, setedit] = useState(false);
   const [completestatus, setcompletestatus] = useState(false);
-  const [incomplete, setincomplete] = useState(data2);
+  const [incomplete, setincomplete] = useState(data);
   const { id, task } = addnewTodo;
   const [cob, setcob] = useState("");
   const handleChange = (e) => {
@@ -81,12 +81,12 @@ export default function Todos(props) {
       setcob(result);
     }
   };
-  {
-    localStorage.setItem("incompletetodo", JSON.stringify(incomplete));
-  }
-  {
-    localStorage.setItem("completetodo", JSON.stringify(complete));
-  }
+  // {
+  //   localStorage.setItem("incompletetodo", JSON.stringify(incomplete));
+  // }
+  // {
+  //   localStorage.setItem("completetodo", JSON.stringify(complete));
+  // }
   // {
   // setincomplete(JSON.parse(data2))}
   let val = (data) => {
