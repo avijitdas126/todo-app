@@ -14,7 +14,7 @@ export default function Todos(props) {
     return a;
   }
   let data3 = localStorage.getItem("completetodo");
-  if (data3.length > 0) {
+  if (data3) {
     data3 = JSON.parse(data3);
   } else {
     data3 = [];
